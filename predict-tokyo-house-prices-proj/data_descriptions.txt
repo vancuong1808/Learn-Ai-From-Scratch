@@ -1,0 +1,81 @@
+Property Structure & Physical Features:
+- PropertyType: Type of property — e.g., Detached house, Apartment, Mansion, or RowHouse.
+- ConstructionMaterial: Main material used in building construction (RC = reinforced concrete, Wood, Steel, etc.).
+- YearBuilt: Year when the building was originally constructed.
+- YearRenovated: Year of the most recent renovation (0 = never renovated).
+- Floors: Total number of floors in the building.
+- Orientation: Primary directional orientation of the property (North, South, East, West).
+- LandArea_sqm: Land area (in square meters) the property sits on.
+- TotalFloorArea_sqm: Combined total floor area of all stories in the property (sqm).
+- FloorHeight_cm: Average height of each floor, measured in centimeters.
+
+Safety, Legal & Resilience:
+- EarthquakeResistant: Whether the building was constructed or retrofitted to meet earthquake resistance standards (1 = yes).
+- SeismicZone: Level of seismic activity in the area (1 = lowest risk, 5 = highest).
+- FloodRiskLevel: Already described above; important here for resilience.
+- LegalComplianceScore: Score from 1–10 reflecting how well the property adheres to local building laws.
+- OwnershipType: Legal ownership category (Freehold, Leasehold_50yr, Leasehold_30yr).
+
+Amenities & Features
+- HasBalcony / HasRooftop / HasGarden: Binary flags for presence of outdoor features (1 = yes).
+- ParkingType: Type of parking available (Mechanical, Manual, None).
+- HasParking: Binary indicator for whether parking is available on the property.
+- PetFriendly: Whether pets are allowed.
+- InsulationLevel: Level of thermal insulation (None to High).
+- HasGym, HasConcierge, HasLounge, HasGuestRoom: Binary indicators of luxury shared amenities.
+- SmartHome: Binary flag for smart home integration.
+- LightingSystem: Type of lighting system (Standard, Smart, Auto).
+- FloorHeating / CentralAC: Whether floor heating or central air conditioning is included.
+- StorageSpace_sqm / HasStorageRoom: Space (in sqm) and flag indicating additional storage.
+
+Interior Layout & Rooms
+- RoomCount / BedroomCount / LivingRoomCount / BathroomCount / ToiletCount: Count of respective rooms in the property.
+- KitchenType: Type of kitchen (e.g., Island, Compact, Closed).
+- KitchenQuality: Quality of kitchen materials and appliances (Standard or High-End).
+- WasherDryerIncluded / FurnitureIncluded: Binary indicators for included appliances/furniture.
+- IsBathAndToiletSeparate: Whether the bathroom and toilet are in separate rooms.
+
+Condition & Quality Indicators
+- ExteriorCondition / InteriorCondition: Rated from 1 (poor) to 5 (excellent).
+- MaintenanceScore: A broader measure (1–10) of how well the property has been maintained.
+- EnergyEfficiencyRating: Energy performance rating (A = best, E = worst).
+- AirQualityScore / ThermalInsulationScore / EarthquakeSafetyScore: Scores (1–10) for internal air quality, thermal retention, and earthquake preparedness.
+
+Market & Economic Factors
+- MonthlyMaintenanceFee_JPY: Monthly fee (in Japanese Yen) required for building upkeep and shared services.
+- LastSoldPrice_JPY: The property's previous recorded sale price in Japanese Yen.
+- NeighborhoodAvgIncome_JPY: Average annual household income in the surrounding neighborhood.
+- RentalYieldEstimate: Estimated annual rental yield (as a percentage of property price).
+- PopulationGrowthRate: Recent growth rate of population in the area (can be negative).
+- ForeignerPopulationRatio: Proportion of non-Japanese residents in the neighborhood.
+- NumberOfListings_in_Ward_Last3Months: Real estate listing activity in the same ward over the last 3 months.
+- AverageDaysOnMarket_in_Ward: Average number of days listings remain unsold in the ward (market speed).
+- FloorAreaRatio_Limit / BuildingCoverageRatio_Limit: Zoning limits for development in the area — FAR and BCR are important legal constraints.
+
+Listing & Transactional Metadata
+- SaleType: Entity responsible for selling the property (Owner, Bank, or Company).
+- SaleCondition: Type of sale (Normal, Foreclosure, Inheritance).
+- Availability: Property availability status (Immediate, Rented, VacantSoon).
+- ListedBy: Who listed the property (Owner or Agent).
+- ListingYear / ListingMonth: When the property was listed.
+- AgentRating: Rating of the listing agent (1–5).
+- BuildingInsuranceIncluded / LoanSupportAvailable / FirstTimeBuyerEligible: Binary flags for financial assistance or benefits.
+
+Special Flags & Cultural Features
+- IsJikoBukken: Indicates a stigmatized property (e.g. previous incident on-site).
+- IsOldDangerousBuilding: Flags buildings considered unsafe due to age and lack of earthquake resistance.
+- IsAirbnbZone: Property located in area with potential for Airbnb operations (Shinjuku/Shibuya, apartment, small size).
+- IsRedevelopmentArea: Area flagged for urban redevelopment (usually commercial and flood-prone).
+- NearbyNegativeFacility: Whether there's a facility nearby that could negatively impact value (e.g., waste plant).
+- IsLuxuryNearMajorStation: Property meets luxury conditions and is close to a major transport hub.
+- IsTraditionHighPrice: Traditional Japanese features (tatami, shoji) and large size — often valued higher.
+- TatamiRoomPresent / ShojiScreensIncluded: Traditional Japanese interior elements.
+- NearbyShrineOrTemple: Binary flag indicating proximity to a shrine or temple.
+- GreenBuildingCertified: Binary indicator whether the property meets green building certification.
+- CustomFeature_1 → CustomFeature_5: Synthetic or hidden features to simulate noise or interaction terms.
+
+Target Variable
+- Price_JPY: Final property sale price in Japanese Yen — this is the target variable to be predicted.
+
+
+

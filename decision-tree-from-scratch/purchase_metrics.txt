@@ -1,0 +1,8 @@
+error(train) : 0.368000
+error(test) : 0.333333
+error(train) : 0.282000
+error(test) : 0.233831
+error(train) : 0.110000
+error(test) : 0.099502
+error(train) : 0.029000
+error(test) : 0.014925
