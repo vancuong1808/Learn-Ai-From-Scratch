@@ -138,3 +138,50 @@ Desktop.ini
 # *.csv
 # *.tsv
 # *.txt
+
+# === Local heavy data / archives (kept on disk, NOT pushed to GitHub) ===
+# AIVNdocs study tree (docs, notebooks, datasets) + per-module archives
+AIVNdocs/
+_archive_zip/
+# Archives / packages
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+# Model weights / checkpoints
+*.pt
+*.pth
+*.ptl
+*.ckpt
+*.onnx
+*.h5
+*.pb
+*.tflite
+*.safetensors
+*.caffemodel
+*.bin
+*.pkl
+*.pickle
+*.joblib
+# Heavy datasets / arrays / media
+*.npy
+*.npz
+*.parquet
+*.feather
+*.pcd
+*.ply
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.idx
+*.ubyte
+# Caches / logs (regenerable)
+__pycache__/
+*.py[cod]
+*.log
+*.cache
+.ipynb_checkpoints/
+.vscode/
